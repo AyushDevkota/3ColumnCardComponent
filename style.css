@@ -55,8 +55,7 @@ body {
 }
 section {
     display: flex;
-    width: 60%;
-    min-width: 600px;
+    width: 66%;
 }
 .card {
     padding: 2em 2.5em;
@@ -84,14 +83,26 @@ section {
     color: var(--very-dark-cyan);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
     body {
         height: auto;
     }
     section {
         flex-direction: column;
-        min-width: auto;
         width: 90%;
-        margin: 3em 0;
+        align-items: center;
+        margin: 3em auto;
+    }
+    .card {
+        max-width: 400px;
+    }
+    .sedan {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 0.5em;
+    }
+    .luxury {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0.5em;
+        border-bottom-left-radius: 0.5em;
     }
 }
